@@ -1,0 +1,78 @@
+
+<html>
+<head>
+<title>Japonia</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="icon" href="https://image.flaticon.com/icons/png/512/197/197604.png" type="image/x-icon">
+<style>
+.slajdy {display:none;}
+h1 {
+  text-align: center;
+  color:crimson;
+}
+body {
+    margin: 0;
+  }
+  w3-top {
+    text-align: center;
+  }
+  w3-black {
+
+  }
+</style>
+</head>
+</div>
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">STRONA GŁÓWNA</a>
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">O MNIE</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PODRÓŻE</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">KONTAKT</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">WIĘCEJ <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Nie wiem</a>
+        <a href="#" class="w3-bar-item w3-button">ARTYKUŁY</a>
+        <a href="#" class="w3-bar-item w3-button">Media</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="slajdy" src="img1i.webp" style="width:100%">
+  <img class="slajdy" src="img2.jpg" style="width:100%">
+  <img class="slajdy" src="img3.jpeg" style="width:100%">
+</div>
+
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("slajdy");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000);
+}
+</script>
+
+
+</body>
+</html>
