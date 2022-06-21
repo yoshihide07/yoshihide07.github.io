@@ -1,5 +1,10 @@
 from flask import Flask ,request
 app = Flask(__name__)
+import os
+
+
+cli = sys.modules['flask.cli']
+cli.show_server_banner = lambda *x: None
 
 @app.route('/')
 
