@@ -1,5 +1,5 @@
 <!-- My shitty code XD. Licensed on MIT . -->
-<!DOCTYPE html>
+<html>
     <head>
       <meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -33,7 +33,7 @@ background-color: rgb(31 41 55);};
 .ml2 .letter {
   display: inline-block;
   line-height: 1em;
-  color: darkgreen;
+  color: rgb(78, 154, 6);
   font-size: 36px;
   position: relative; height: -10px;
 }
@@ -53,16 +53,11 @@ h2 {
 .ml14 .text-wrapper {
   position: relative;
   display: inline-block;
-  padding-top: 0.1em;
-  padding-right: 0.05em;
-  padding-bottom: 0.15em;
 }
 
 .ml14 .line {
   opacity: 0;
-  position: absolute;
-  left: 0;
-  height: 2px;
+  position: relative;
   width: 100%;
   background-color: #fff;
   transform-origin: 100% 100%;
@@ -169,49 +164,32 @@ anime.timeline({loop: true})
   &nbsp;
   <h1  class="lowertext font-sans text-green-500 ">Web and python developer. Nice to see you here. </h1>
   &nbsp;
-   &nbsp;
-    &nbsp;
-     &nbsp;
-     &nbsp;
-      &nbsp;
-        &nbsp;
-        &nbsp;
-    <h1 class="ml14">
-      <span class="text-wrapper">
-        <span class="letters font-extrabold text-white ">About Me</span>
-        <span class="line"></span>
-      </span>
-    </h1>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script>
-      var textWrapper = document.querySelector('.ml14 .letters');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+  &nbsp;
+  <br></br> <!-- SOrry i can't do something else-->
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
 
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml14 .line',
-    scaleX: [0,1],
-    opacity: [0.5,1],
-    easing: "easeInOutExpo",
-    duration: 900
-  }).add({
-    targets: '.ml14 .letter',
-    opacity: [0,1],
-    translateX: [40,0],
-    translateZ: 0,
-    scaleX: [0.3, 1],
-    easing: "easeOutExpo",
-    duration: 800,
-    offset: '-=600',
-    delay: (el, i) => 150 + 25 * i
-  }).add({
-    targets: '.ml14',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  });
-    </script>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  
+
+<div class="aboutme border-t border-gray-600/25 my-4 mx-6 sm:mx-10 lg:mx-14 xl:mx-20 left-32 >
+  <h2 class=" " >
+    <br></br>
+    <br></br>
+    <span class="text-wrapper">
+      <span class="  font-extrabold my-4 mx-6 sm:mx-10 lg:mx-14 xl:mx-20   text-6xl left-4 font-extrabold text-white  flex flex-col underline decoration-emerald-500 min-h-screen   ">About Me</span>
+      <span class="line"></span>
+    </span>
+  </h1>
+  
+</div>
+  
 
     </body>
 </html>
