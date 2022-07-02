@@ -12,6 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Roboto:wght@100&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
 <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 <!-- For full functionality I added some external libaries. Some components must be imported at your own  -->
 <style>
     h1 {
@@ -135,7 +136,21 @@ h2 {
       menu.classList.toggle("hidden");
     });
   </script>
-  
+  <script>
+       function scrolldiv() {
+                window.scroll(0, 
+         findPosition(document.getElementById("aboutme")));
+            }
+            function findPosition(obj) {
+                var currenttop = 0;
+                if (obj.offsetParent) {
+                    do {
+                        currenttop += obj.offsetTop;
+                    } while ((obj = obj.offsetParent));
+                    return [currenttop];
+                }
+            }
+  </script>
 </nav>
 &nbsp;
 <h1 class="ml2"> $~: hello   desktop   user :)</h1>
