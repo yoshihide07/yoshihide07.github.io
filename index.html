@@ -138,22 +138,12 @@ h2 {
   </script>
 
 <script>
-const links = document.querySelectorAll("pc-menu ul a");
 
-for (const link of links) {
-  link.addEventListener("click", clickHandler);
-}
-
-function clickHandler(e) {
-  e.preventDefault();
-  const href = this.getAttribute("href");
-  const offsetTop = document.querySelector(href).offsetTop;
-
-  scroll({
-    top: offsetTop,
-    behavior: "smooth"
-  });
-}
+$("abtbtn").click(function() {
+    $('html,body').animate({
+        scrollTop: $("aboutme").offset().top},
+        'slow');
+});
 
 </script>
 </nav>
