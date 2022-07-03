@@ -141,20 +141,13 @@ h2 {
 // maybe it will work
 
 
-$(document).ready(function(){
- $(window).scroll(function(){
- if ($(window).scrollTop() > 100) {
-  $('#scrollToTop').fadeIn();
- } else {
-  $('#scrollToTop').fadeOut();
- }
- });
-});
+$("[href^='#']").click(function() {
+        id=$(this).attr("href")
+        $('html, body').animate({
+            scrollTop: $(id).offset().top
+        }, 2000);
+    });
 
-function scrolltop()
-{
- $('html, body').animate({scrollTop : 0},500);
-}
 
 
 
