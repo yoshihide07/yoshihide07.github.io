@@ -139,11 +139,12 @@ h2 {
 
 <script>
 // maybe it will work
-$("abtbtn").click(function() {
-    $('html,body').animate({
-        scrollTop: $("#aboutme").offset().top},
-        'slow');
-});
+$("[href^='#']").click(function() {
+        id=$(this).attr("href")
+        $('html, body').animate({
+            scrollTop: $(id).offset().top
+        }, 2000);
+    });
 
 </script>
 </nav>
