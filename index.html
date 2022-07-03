@@ -139,12 +139,24 @@ h2 {
 
 <script>
 // maybe it will work
-$("[href^='#']").click(function() {
-        id=$(this).attr("href")
-        $('html, body').animate({
-            scrollTop: $(id).offset().top
-        }, 2000);
-    });
+
+
+$(document).ready(function(){
+ $(window).scroll(function(){
+ if ($(window).scrollTop() > 100) {
+  $('#scrollToTop').fadeIn();
+ } else {
+  $('#scrollToTop').fadeOut();
+ }
+ });
+});
+
+function scrolltop()
+{
+ $('html, body').animate({scrollTop : 0},500);
+}
+
+
 
 </script>
 </nav>
