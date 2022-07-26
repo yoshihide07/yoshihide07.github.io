@@ -1,0 +1,1 @@
+console.log('%c' + 'Hi mate ;p. source code: https://github.com/yoshihide07/yoshihide07.github.io', 'font-family:Comic Sans MS; font-size:32px; font-weight:bold; background: linear-gradient(#f00, yellow); border-radius: 5px; padding: 20px')
